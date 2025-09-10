@@ -61,4 +61,61 @@ class AuthController extends Controller
             'token' => $token,
         ]);
     }
+
+
+    public function deleteUser(Request $request, $id)
+{
+    $authUser = $request->user(); // user yang sedang login
+
+    // hanya admin yang bisa delete
+    if ($authUser->role !== 'admin') {
+        return response()->json(['message' => 'Unauthorized'], 403);
+    }
+
+    $user = User::find($id);
+
+    if (!$user) {
+        return response()->json(['message' => 'User not found'], 404);
+    }
+
+    $user->delete();
+
+    return response()->json(['message' => 'User deleted successfully']);
+}
+
+
+
+    public function updateRole(Request $request, $id)
+{
+    $authUser = $request->user(); // user yang login
+
+    // hanya admin yang bisa ubah role
+    if ($authUser->role !== 'admin') {
+        return response()->json(['message' => 'Unauthorized'], 403);
+    }
+
+    // validasi role
+    $validator = Validator::make($request->all(), [
+        'role' => 'required|in:admin,user',
+    ]);
+
+    if ($validator->fails()) {
+        return response()->json(['errors' => $validator->errors()], 422);
+    }
+
+    $user = User::find($id);
+
+    if (!$user) {
+        return response()->json(['message' => 'User not found'], 404);
+    }
+
+    $user->role = $request->role;
+    $user->save();
+
+    return response()->json([
+        'message' => 'User role updated successfully',
+        'user' => $user,
+    ]);
+}
+
 }
