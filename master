@@ -1,0 +1,36 @@
+[33mcommit d531a35b60d81885fc60010ce9695fc224eb03a4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: d83cd61 9d0d00a
+Author: rapep18 <muhrafif03@gmail.com>
+Date:   Thu Sep 11 17:18:33 2025 +0700
+
+    Merge branch 'master' of https://github.com/rapep18/fukuno-app
+
+[33mcommit d83cd6118f90c36451a17094e0f8e75aa77f89a5[m
+Author: rapep18 <muhrafif03@gmail.com>
+Date:   Wed Sep 10 19:36:48 2025 +0700
+
+    Delete user dan tambah role
+
+[33mcommit 2e620d3b9101105041d07571c225afdc1ed07a1c[m
+Author: rapep18 <muhrafif03@gmail.com>
+Date:   Thu Sep 11 17:17:49 2025 +0700
+
+    Update auth.php
+
+[33mcommit 9d0d00aab90ab9146836703b38f6a1c9f46c7f30[m
+Author: rapep18 <muhrafif03@gmail.com>
+Date:   Thu Sep 11 17:17:49 2025 +0700
+
+    Update auth.php
+
+[33mcommit d8702fd1ea65eff02a2e199385600b489c8db726[m
+Author: rapep18 <muhrafif03@gmail.com>
+Date:   Wed Sep 10 19:36:48 2025 +0700
+
+    Delete user dan tambah role
+
+[33mcommit 016a162bc86175e3304da09b1e2e4e9eead544a8[m[33m ([m[1;31mupstream/master[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Author: omsentod <rifqiwidyadana6@gmail.com>
+Date:   Thu Aug 28 18:22:59 2025 +0700
+
+    Menambahkan file awal
